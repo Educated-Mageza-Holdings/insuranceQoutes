@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsureCompare SA - Find Your Best Insurance Deal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo-icon">&#9878;</span>
+                <span class="logo-text">InsureCompare<span class="logo-sa">SA</span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#compare">Compare</a></li>
+                <li><a href="#insurance-types">Insurance Types</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#providers">Providers</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn btn-outline">Sign In</a>
+                <a href="#compare" class="btn btn-primary">Compare Now</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge">South Africa's #1 Insurance Comparison Platform</span>
+                <h1>Compare Insurance & <span class="gradient-text">Save Up To 30%</span></h1>
+                <p class="hero-subtitle">Stop overpaying for insurance. Compare quotes from South Africa's top insurers in minutes and find the coverage that fits your budget and needs.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">R2.3B+</span>
+                        <span class="stat-label">Saved by South Africans</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Insurance Partners</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">500K+</span>
+                        <span class="stat-label">Policies Compared</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#compare" class="btn btn-primary btn-lg">Compare Insurance Now</a>
+                    <a href="#how-it-works" class="btn btn-ghost btn-lg">
+                        How It Works
+                    </a>
+                </div>
+                <div class="hero-trust">
+                    <span>Trusted by:</span>
+                    <div class="trust-logos">
+                        <span class="trust-logo">Discovery</span>
+                        <span class="trust-logo">Outsurance</span>
+                        <span class="trust-logo">Santam</span>
+                        <span class="trust-logo">MiWay</span>
+                        <span class="trust-logo">King Price</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="comparison-preview">
+                    <div class="preview-header">
+                        <span>Best Match for You</span>
+                    </div>
+                    <div class="preview-card best">
+                        <div class="provider-badge">Recommended</div>
+                        <div class="provider-name">Discovery Insure</div>
+                        <div class="provider-price">R1,245<span>/month</span></div>
+                        <div class="provider-rating">
+                            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            <span>4.8/5</span>
+                        </div>
+                        <ul class="provider-features">
+                            <li>&#10003; Comprehensive Cover</li>
+                            <li>&#10003; R0 Excess Option</li>
+                            <li>&#10003; Vitality Drive Rewards</li>
+                        </ul>
+                    </div>
+                    <div class="preview-others">
+                        <div class="mini-card">
+                            <span>Outsurance</span>
+                            <span>R1,380/mo</span>
+                        </div>
+                        <div class="mini-card">
+                            <span>King Price</span>
+                            <span>R1,420/mo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Insurance Types Section -->
+    <section id="insurance-types" class="insurance-types">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Coverage Options</span>
+                <h2>What Do You Want to <span class="gradient-text">Insure Today?</span></h2>
+                <p>Select your insurance type to start comparing quotes</p>
+            </div>
+            <div class="types-grid">
+                <a href="#compare" class="type-card" data-type="car">
+                    <div class="type-icon auto">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 17h14M5 17a2 2 0 01-2-2v-4a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 17l-1 2h2l1-2m12 0l1 2h-2l-1-2"/>
+                            <circle cx="7" cy="14" r="1"/>
+                            <circle cx="17" cy="14" r="1"/>
+                        </svg>
+                    </div>
+                    <h3>Car Insurance</h3>
+                    <p>Comprehensive, third-party, and fire & theft cover for your vehicle.</p>
+                    <span class="type-price">From R450/month</span>
+                </a>
+                <a href="#compare" class="type-card" data-type="home">
+                    <div class="type-icon property">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                            <polyline points="9 22 9 12 15 12 15 22"/>
+                        </svg>
+                    </div>
+                    <h3>Home Insurance</h3>
+                    <p>Building, contents, and all-risk cover for homeowners and tenants.</p>
+                    <span class="type-price">From R280/month</span>
+                </a>
+                <a href="#compare" class="type-card" data-type="life">
+                    <div class="type-icon life">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                        </svg>
+                    </div>
+                    <h3>Life Insurance</h3>
+                    <p>Term life, whole life, and funeral cover to protect your loved ones.</p>
+                    <span class="type-price">From R150/month</span>
+                </a>
+                <a href="#compare" class="type-card" data-type="health">
+                    <div class="type-icon travel">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                        </svg>
+                    </div>
+                    <h3>Medical Aid</h3>
+                    <p>Hospital plans, comprehensive cover, and gap cover options.</p>
+                    <span class="type-price">From R890/month</span>
+                </a>
+                <a href="#compare" class="type-card" data-type="business">
+                    <div class="type-icon rental">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                            <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/>
+                        </svg>
+                    </div>
+                    <h3>Business Insurance</h3>
+                    <p>Commercial, liability, and professional indemnity coverage.</p>
+                    <span class="type-price">From R650/month</span>
+                </a>
+                <a href="#compare" class="type-card" data-type="travel">
+                    <div class="type-icon event">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="2" y1="12" x2="22" y2="12"/>
+                            <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+                        </svg>
+                    </div>
+                    <h3>Travel Insurance</h3>
+                    <p>Single trip and annual cover for local and international travel.</p>
+                    <span class="type-price">From R35/day</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Comparison Tool -->
+    <section id="compare" class="compare-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Compare & Save</span>
+                <h2>Get Your <span class="gradient-text">Personalised Quotes</span></h2>
+                <p>Fill in your details and we'll find the best insurance deals for you</p>
+            </div>
+
+            <div class="compare-container">
+                <!-- Input Form -->
+                <div class="compare-form-container">
+                    <form class="compare-form" id="compareForm">
+                        <div class="form-section">
+                            <h3>1. Select Insurance Type</h3>
+                            <div class="insurance-type-select">
+                                <label class="type-option">
+                                    <input type="radio" name="insuranceType" value="car" checked>
+                                    <span class="option-box">
+                                        <span class="option-icon">&#128663;</span>
+                                        <span>Car</span>
+                                    </span>
+                                </label>
+                                <label class="type-option">
+                                    <input type="radio" name="insuranceType" value="home">
+                                    <span class="option-box">
+                                        <span class="option-icon">&#127968;</span>
+                                        <span>Home</span>
+                                    </span>
+                                </label>
+                                <label class="type-option">
+                                    <input type="radio" name="insuranceType" value="life">
+                                    <span class="option-box">
+                                        <span class="option-icon">&#10084;</span>
+                                        <span>Life</span>
+                                    </span>
+                                </label>
+                                <label class="type-option">
+                                    <input type="radio" name="insuranceType" value="health">
+                                    <span class="option-box">
+                                        <span class="option-icon">&#129657;</span>
+                                        <span>Medical</span>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Car Insurance Fields -->
+                        <div class="form-section dynamic-fields" id="carFields">
+                            <h3>2. Vehicle Details</h3>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="vehicleMake">Vehicle Make</label>
+                                    <select id="vehicleMake" name="vehicleMake">
+                                        <option value="">Select make</option>
+                                        <option value="toyota">Toyota</option>
+                                        <option value="volkswagen">Volkswagen</option>
+                                        <option value="ford">Ford</option>
+                                        <option value="hyundai">Hyundai</option>
+                                        <option value="nissan">Nissan</option>
+                                        <option value="bmw">BMW</option>
+                                        <option value="mercedes">Mercedes-Benz</option>
+                                        <option value="audi">Audi</option>
+                                        <option value="mazda">Mazda</option>
+                                        <option value="kia">Kia</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="vehicleYear">Year</label>
+                                    <select id="vehicleYear" name="vehicleYear">
+                                        <option value="">Select year</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2015">2015 or older</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="vehicleValue">Estimated Value (R)</label>
+                                    <input type="number" id="vehicleValue" name="vehicleValue" placeholder="e.g. 250000">
+                                </div>
+                                <div class="form-group">
+                                    <label for="coverType">Cover Type</label>
+                                    <select id="coverType" name="coverType">
+                                        <option value="comprehensive">Comprehensive</option>
+                                        <option value="thirdparty_fire_theft">Third Party, Fire & Theft</option>
+                                        <option value="thirdparty">Third Party Only</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Home Insurance Fields -->
+                        <div class="form-section dynamic-fields" id="homeFields" style="display: none;">
+                            <h3>2. Property Details</h3>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="propertyType">Property Type</label>
+                                    <select id="propertyType" name="propertyType">
+                                        <option value="">Select type</option>
+                                        <option value="house">House</option>
+                                        <option value="townhouse">Townhouse</option>
+                                        <option value="apartment">Apartment/Flat</option>
+                                        <option value="estate">Estate House</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="buildingValue">Building Value (R)</label>
+                                    <input type="number" id="buildingValue" name="buildingValue" placeholder="e.g. 1500000">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contentsValue">Contents Value (R)</label>
+                                    <input type="number" id="contentsValue" name="contentsValue" placeholder="e.g. 300000">
+                                </div>
+                                <div class="form-group">
+                                    <label for="securityFeatures">Security Features</label>
+                                    <select id="securityFeatures" name="securityFeatures">
+                                        <option value="basic">Basic (locks only)</option>
+                                        <option value="alarm">Alarm System</option>
+                                        <option value="armed">Armed Response</option>
+                                        <option value="full">Full Security (electric fence, CCTV)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Life Insurance Fields -->
+                        <div class="form-section dynamic-fields" id="lifeFields" style="display: none;">
+                            <h3>2. Personal Details</h3>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="age">Your Age</label>
+                                    <input type="number" id="age" name="age" placeholder="e.g. 35" min="18" max="65">
+                                </div>
+                                <div class="form-group">
+                                    <label for="smoker">Smoker Status</label>
+                                    <select id="smoker" name="smoker">
+                                        <option value="no">Non-Smoker</option>
+                                        <option value="yes">Smoker</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="coverAmount">Cover Amount (R)</label>
+                                    <select id="coverAmount" name="coverAmount">
+                                        <option value="500000">R500,000</option>
+                                        <option value="1000000">R1,000,000</option>
+                                        <option value="2000000">R2,000,000</option>
+                                        <option value="5000000">R5,000,000</option>
+                                        <option value="10000000">R10,000,000</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lifeCoverType">Cover Type</label>
+                                    <select id="lifeCoverType" name="lifeCoverType">
+                                        <option value="term">Term Life (20 years)</option>
+                                        <option value="whole">Whole Life</option>
+                                        <option value="funeral">Funeral Cover</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Medical Aid Fields -->
+                        <div class="form-section dynamic-fields" id="healthFields" style="display: none;">
+                            <h3>2. Medical Aid Details</h3>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="members">Number of Members</label>
+                                    <select id="members" name="members">
+                                        <option value="1">1 (Principal only)</option>
+                                        <option value="2">2 (+ Spouse/Partner)</option>
+                                        <option value="3">3 (+ 1 Child)</option>
+                                        <option value="4">4 (+ 2 Children)</option>
+                                        <option value="5">5+ (Large Family)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="planType">Plan Type</label>
+                                    <select id="planType" name="planType">
+                                        <option value="hospital">Hospital Plan</option>
+                                        <option value="saver">Medical Savings</option>
+                                        <option value="comprehensive">Comprehensive</option>
+                                        <option value="premium">Premium/Executive</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="chronicConditions">Chronic Conditions</label>
+                                    <select id="chronicConditions" name="chronicConditions">
+                                        <option value="none">None</option>
+                                        <option value="1">1 condition</option>
+                                        <option value="2">2+ conditions</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="income">Monthly Income</label>
+                                    <select id="income" name="income">
+                                        <option value="low">Below R20,000</option>
+                                        <option value="medium">R20,000 - R50,000</option>
+                                        <option value="high">Above R50,000</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Personal Info -->
+                        <div class="form-section">
+                            <h3>3. Your Information</h3>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="fullName">Full Name</label>
+                                    <input type="text" id="fullName" name="fullName" placeholder="e.g. Thabo Mokoena">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" placeholder="e.g. thabo@email.co.za">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="e.g. 082 123 4567">
+                                </div>
+                                <div class="form-group">
+                                    <label for="province">Province</label>
+                                    <select id="province" name="province">
+                                        <option value="">Select province</option>
+                                        <option value="gauteng">Gauteng</option>
+                                        <option value="western_cape">Western Cape</option>
+                                        <option value="kwazulu_natal">KwaZulu-Natal</option>
+                                        <option value="eastern_cape">Eastern Cape</option>
+                                        <option value="free_state">Free State</option>
+                                        <option value="mpumalanga">Mpumalanga</option>
+                                        <option value="limpopo">Limpopo</option>
+                                        <option value="north_west">North West</option>
+                                        <option value="northern_cape">Northern Cape</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">
+                            <span class="btn-text">Compare Quotes Now</span>
+                            <span class="btn-loading" style="display: none;">Finding best deals...</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Results Panel -->
+                <div class="compare-results" id="compareResults" style="display: none;">
+                    <div class="results-header">
+                        <h3>Your Personalised Quotes</h3>
+                        <p>Based on your details, here are the best options:</p>
+                        <div class="results-summary">
+                            <span class="summary-item">
+                                <strong id="quotesCount">6</strong> quotes found
+                            </span>
+                            <span class="summary-item">
+                                Potential savings: <strong id="savingsAmount">R2,340/year</strong>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="results-filters">
+                        <button class="filter-btn active" data-sort="recommended">Recommended</button>
+                        <button class="filter-btn" data-sort="price-low">Lowest Price</button>
+                        <button class="filter-btn" data-sort="price-high">Highest Cover</button>
+                        <button class="filter-btn" data-sort="rating">Best Rated</button>
+                    </div>
+
+                    <div class="results-list" id="resultsList">
+                        <!-- Results will be populated by JavaScript -->
+                    </div>
+
+                    <div class="results-disclaimer">
+                        <p>* Quotes are estimates based on provided information. Final premiums may vary after full underwriting. All prices include VAT where applicable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Simple Process</span>
+                <h2>How <span class="gradient-text">InsureCompare</span> Works</h2>
+                <p>Get the best insurance deal in three easy steps</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/>
+                            <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                        </svg>
+                    </div>
+                    <h3>Tell Us What You Need</h3>
+                    <p>Fill in your details and what you want to insure. It only takes 2 minutes.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="20" x2="18" y2="10"/>
+                            <line x1="12" y1="20" x2="12" y2="4"/>
+                            <line x1="6" y1="20" x2="6" y2="14"/>
+                        </svg>
+                    </div>
+                    <h3>Compare Quotes Side-by-Side</h3>
+                    <p>We fetch real quotes from 15+ insurers and rank them by value, not just price.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                    </div>
+                    <h3>Choose & Save</h3>
+                    <p>Pick the best option and apply online. Start saving from day one.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Providers Section -->
+    <section id="providers" class="providers">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Partners</span>
+                <h2>Compare Quotes from <span class="gradient-text">SA's Top Insurers</span></h2>
+                <p>We partner with licensed, FSB-registered insurance providers</p>
+            </div>
+            <div class="providers-grid">
+                <div class="provider-card">
+                    <div class="provider-logo">Discovery</div>
+                    <div class="provider-info">
+                        <span class="provider-rating">&#9733; 4.8</span>
+                        <span class="provider-claims">Claims: 92%</span>
+                    </div>
+                </div>
+                <div class="provider-card">
+                    <div class="provider-logo">Outsurance</div>
+                    <div class="provider-info">
+                        <span class="provider-rating">&#9733; 4.6</span>
+                        <span class="provider-claims">Claims: 94%</span>
+                    </div>
+                </div>
+                <div class="provider-card">
+                    <div class="provider-logo">Santam</div>
+                    <div class="provider-info">
+                        <span class="provider-rating">&#9733; 4.5</span>
+                        <span class="provider-claims">Claims: 91%</span>
+                    </div>
+                </div>
+                <div class="provider-card">
+                    <div class="provider-logo">MiWay</div>
+                    <div class="provider-info">
+                        <span class="provider-rating">&#9733; 4.4</span>
+                        <span class="provider-claims">Claims: 89%</span>
+                    </div>
+                </div>
+                <div class="provider-card">
+                    <div class="provider-logo">King Price</div>
+                    <div class="provider-info">
+                        <span class="provider-rating">&#9733; 4.7</span>
+                        <span class="provider-claims">Claims: 93%</span>
+                    </div>
+                </div>
+                <div class="provider-card">
+                    <div class="provider-logo">1st for Women</div>
+                    <div class="provider-info">
+                        <span class="provider-rating">&#9733; 4.5</span>
+                        <span class="provider-claims">Claims: 90%</span>
+                    </div>
+                </div>
+                <div class="provider-card">
+                    <div class="provider-logo">Budget Insurance</div>
+                    <div class="provider-info">
+                        <span class="provider-rating">&#9733; 4.2</span>
+                        <span class="provider-claims">Claims: 87%</span>
+                    </div>
+                </div>
+                <div class="provider-card">
+                    <div class="provider-logo">Auto & General</div>
+                    <div class="provider-info">
+                        <span class="provider-rating">&#9733; 4.3</span>
+                        <span class="provider-claims">Claims: 88%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Customer Stories</span>
+                <h2>Real Savings from <span class="gradient-text">Real South Africans</span></h2>
+                <p>Join thousands who've found better insurance deals</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-savings">Saved R3,600/year</div>
+                    <p class="testimonial-text">"I was paying R1,800/month with my old insurer. InsureCompare found me the same cover for R1,500. That's R3,600 back in my pocket every year!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">TM</div>
+                        <div class="author-info">
+                            <span class="author-name">Thabo Molefe</span>
+                            <span class="author-title">Car Insurance, Johannesburg</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-savings">Saved R2,100/year</div>
+                    <p class="testimonial-text">"The comparison was so easy. I could see exactly what each insurer offered and their claim success rates. Made my decision in 10 minutes."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">LN</div>
+                        <div class="author-info">
+                            <span class="author-name">Lerato Nkosi</span>
+                            <span class="author-title">Home Insurance, Cape Town</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-savings">Better Cover, Same Price</div>
+                    <p class="testimonial-text">"Found out I was underinsured! Got better cover with lower excess for the same premium. The recommendation engine really works."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PV</div>
+                        <div class="author-info">
+                            <span class="author-name">Pieter van der Merwe</span>
+                            <span class="author-title">Life Insurance, Pretoria</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Start Saving on Your Insurance Today</h2>
+                <p>Join over 500,000 South Africans who've found better insurance deals through InsureCompare.</p>
+                <div class="cta-buttons">
+                    <a href="#compare" class="btn btn-white btn-lg">Compare Quotes Now</a>
+                    <a href="tel:0800123456" class="btn btn-outline-white btn-lg">Call 0800 123 456</a>
+                </div>
+                <p class="cta-note">Free service | No obligation | Takes 2 minutes</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="nav-brand">
+                        <span class="logo-icon">&#9878;</span>
+                        <span class="logo-text">InsureCompare<span class="logo-sa">SA</span></span>
+                    </div>
+                    <p>South Africa's leading insurance comparison platform. We help you find the best cover at the best price.</p>
+                    <div class="footer-certifications">
+                        <span class="cert-badge">FSP Licensed</span>
+                        <span class="cert-badge">POPIA Compliant</span>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Insurance</h4>
+                    <ul>
+                        <li><a href="#">Car Insurance</a></li>
+                        <li><a href="#">Home Insurance</a></li>
+                        <li><a href="#">Life Insurance</a></li>
+                        <li><a href="#">Medical Aid</a></li>
+                        <li><a href="#">Business Insurance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Insurance Guide</a></li>
+                        <li><a href="#">Claims Process</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:0800123456">0800 123 456</a></li>
+                        <li><a href="mailto:hello@insurecompare.co.za">hello@insurecompare.co.za</a></li>
+                        <li><a href="#">Sandton, Johannesburg</a></li>
+                        <li><a href="#">Mon-Fri: 8am - 5pm</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 InsureCompare SA (Pty) Ltd. FSP 12345. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">PAIA Manual</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
